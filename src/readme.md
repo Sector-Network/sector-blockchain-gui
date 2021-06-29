@@ -11,7 +11,7 @@ LOCAL_TEST=true
 
 ## Best practices
 
-- using TypeScript and CSS-in-JS because material-ui is using CSS-in-JS
+- using TypeScript and CSS-in-JS because material-ui is using CSS-in-JS.
 - Only one exported component per file
 - Same file name like exported function / component / class
 - CSS, gprahql file next to the component file with different extension
