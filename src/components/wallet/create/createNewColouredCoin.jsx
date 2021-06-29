@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@chia/core';
+import { AlertDialog } from '@sector/core';
 import {
   Typography,
   Button,
@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_cc_action } from '../../../modules/message';
-import { chia_to_mojo } from '../../../util/chia';
+import { sector_to_octet } from '../../../util/sector';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -87,8 +87,8 @@ export const CreateNewCCWallet = () => {
       return;
     }
     dispatch(createState(true, true));
-    const amount = chia_to_mojo(amount_input.value);
-    const fee = chia_to_mojo(fee_input.value);
+    const amount = sector_to_octet(amount_input.value);
+    const fee = sector_to_octet(fee_input.value);
     dispatch(create_cc_action(amount, fee));
   }
 

@@ -1,22 +1,22 @@
 const units = {
-  chia: 1,
-  mojo: 1 / 1e12,
+  sector: 1,
+  octet: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  chia: ['ch', 'chia', 'Chia'],
-  mojo: ['mj', 'mojo'],
+  sector: ['se', 'sector', 'Sector'],
+  octet: ['oc', 'octet'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  chia: {
-    format: '{amount} CH',
+  sector: {
+    format: '{amount} SE',
     fractionDigits: 12,
   },
-  mojo: {
-    format: '{amount} MJ',
+  octet: {
+    format: '{amount} OC',
     fractionDigits: 0,
   },
   colouredcoin: {

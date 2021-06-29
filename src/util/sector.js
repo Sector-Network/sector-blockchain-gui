@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class Chia {
+class Sector {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,42 +73,42 @@ class Chia {
   }
 }
 
-export const chia_formatter = (value, unit) => new Chia(value, unit);
+export const sector_formatter = (value, unit) => new Sector(value, unit);
 
-chia_formatter.convert = convert;
-chia_formatter.setDisplay = units.setDisplay;
-chia_formatter.setUnit = units.setUnit;
-chia_formatter.getUnit = units.getUnit;
-chia_formatter.setFiat = (currency, rate, display = null) => {
+sector_formatter.convert = convert;
+sector_formatter.setDisplay = units.setDisplay;
+sector_formatter.setUnit = units.setUnit;
+sector_formatter.getUnit = units.getUnit;
+sector_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_chia = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo').to('chia').value();
+export const octet_to_sector = (octet) => {
+  return sector_formatter(Number.parseInt(octet), 'octet').to('sector').value();
 };
 
-export const chia_to_mojo = (chia) => {
-  return chia_formatter(Number.parseFloat(Number(chia)), 'chia')
-    .to('mojo')
+export const sector_to_octet = (sector) => {
+  return sector_formatter(Number.parseFloat(Number(sector)), 'sector')
+    .to('octet')
     .value();
 };
 
-export const mojo_to_chia_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('chia').toString();
+export const octet_to_sector_string = (octet) => {
+  return sector_formatter(Number(octet), 'octet').to('sector').toString();
 };
 
-export const mojo_to_colouredcoin = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo')
+export const octet_to_colouredcoin = (octet) => {
+  return sector_formatter(Number.parseInt(octet), 'octet')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_mojo = (colouredcoin) => {
-  return chia_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('mojo')
+export const colouredcoin_to_octet = (colouredcoin) => {
+  return sector_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
+    .to('octet')
     .value();
 };
 
-export const mojo_to_colouredcoin_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+export const octet_to_colouredcoin_string = (octet) => {
+  return sector_formatter(Number(octet), 'octet').to('colouredcoin').toString();
 };

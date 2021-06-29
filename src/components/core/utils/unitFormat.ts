@@ -8,8 +8,8 @@ type Options = {
 };
 
 const defaultOptions = {
-  to: Unit.CHIA,
-  from: Unit.CHIA,
+  to: Unit.SECTOR,
+  from: Unit.SECTOR,
 };
 
 export default function unitFormat(value: number, options: Options): string {

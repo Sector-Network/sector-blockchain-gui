@@ -6,21 +6,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: sq_AL\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: sector-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-06-21 17:51\n"
 "Last-Translator: \n"
 "Language-Team: Albanian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: sector-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: sq\n"
-"X-Crowdin-File: /[Chia-Network.chia-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Sector-Network.sector-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:70
-msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "Dëshiron të mësosh më shumë rreth Chia's? Kliko në <0> Chia Explorer</0> e ndërtuar nga një programues open source."
+msgid "*Want to explore Sector’s blocks further? Check out <0>Sector Explorer</0> built by an open source developer."
+msgstr "Dëshiron të mësosh më shumë rreth Sector's? Kliko në <0> Sector Explorer</0> e ndërtuar nga një programues open source."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
@@ -36,8 +36,8 @@ msgstr "Korrësi eshte nje shërbim i cili është i integruar në pajisjen ku P
 
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
-msgid "About Chia Blockchain"
-msgstr "Rreth zinxhirit Chia"
+msgid "About Sector Blockchain"
+msgstr "Rreth zinxhirit Sector"
 
 #: src/components/trading/ViewOffer.jsx:85
 msgid "Accept"
@@ -187,8 +187,8 @@ msgid "Block VDF Iterations"
 msgstr "Përsëritjet e Bllokut VDF"
 
 #: src/components/block/Block.jsx:311
-msgid "Block at height {0} in the Chia blockchain"
-msgstr "Blloku ne lartësin {0} ne Zinxhirin Chia"
+msgid "Block at height {0} in the Sector blockchain"
+msgstr "Blloku ne lartësin {0} ne Zinxhirin Sector"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -268,16 +268,16 @@ msgid "Chat on KeyBase"
 msgstr "Shkruaj në KeyBase"
 
 #: src/electron/main.tsx:420
-msgid "Chia"
-msgstr "Chia"
+msgid "Sector"
+msgstr "Sector"
 
 #: src/electron/main.tsx:359
-msgid "Chia Blockchain Wiki"
-msgstr "Zinxhiri Chia Wiki"
+msgid "Sector Blockchain Wiki"
+msgstr "Zinxhiri Sector Wiki"
 
 #: src/components/wallet/Wallets.tsx:56
-msgid "Chia Wallet"
-msgstr "Kuleta Chia"
+msgid "Sector Wallet"
+msgstr "Kuleta Sector"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:21
 msgid "Choose Number of Plots"
@@ -591,8 +591,8 @@ msgid "Edit"
 msgstr "Modifiko"
 
 #: src/components/wallet/WalletImport.tsx:142
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Shkruaj 24 fjalët mnemonic që ke ruajtur pëer të rikthyer Kuletën tende Chia."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Sector wallet."
+msgstr "Shkruaj 24 fjalët mnemonic që ke ruajtur pëer të rikthyer Kuletën tende Sector."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -605,8 +605,8 @@ msgid "Error"
 msgstr "Gabim"
 
 #: src/components/wallet/standard/WalletStandard.tsx:415
-msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Gabim: Nuk mund te dergojmë Chia në Adresën e dhënë. Ju lutemi vendosni një adresë Chia."
+msgid "Error: Cannot send sector to coloured address. Please enter a sector address."
+msgstr "Gabim: Nuk mund te dergojmë Sector në Adresën e dhënë. Ju lutemi vendosni një adresë Sector."
 
 #: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:51
 #: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:61
@@ -708,7 +708,7 @@ msgid "Fee"
 msgstr "Tarifa"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXSC)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1242,8 +1242,8 @@ msgid "Plots Passed Filter"
 msgstr "Plotet e kaluan filtërin"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:30
-msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Ploteve u është dhënë hapësirë në hard diskun tuaj që përdoret për të fermuar dhe fituar Chia. <0> Mësoni më shumë </0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn Sector. <0>Learn more</0>"
+msgstr "Ploteve u është dhënë hapësirë në hard diskun tuaj që përdoret për të fermuar dhe fituar Sector. <0> Mësoni më shumë </0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:33
 msgid "Plotting"
@@ -1585,8 +1585,8 @@ msgstr "Gjatësia e intervalit të shpenzimeve (numri i blloqeve)"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:415
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:466
-msgid "Spending Limit (chia per interval): {0}"
-msgstr "Kufiri i shpenzimeve (chia për interval): {0}"
+msgid "Spending Limit (sector per interval): {0}"
+msgstr "Kufiri i shpenzimeve (sector për interval): {0}"
 
 #: src/components/fullNode/FullNode.jsx:95
 msgid "State"
@@ -1633,8 +1633,8 @@ msgstr "Statusi:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Chia blockchain"
-#~ msgstr "Sub Block at height {0} in the Chia blockchain"
+#~ msgid "Sub Block at height {0} in the Sector blockchain"
+#~ msgstr "Sub Block at height {0} in the Sector blockchain"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:357
 msgid "Submit"
@@ -1659,23 +1659,23 @@ msgstr "Sinkronizimi <0/>/<1/>"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXSC Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXSC Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXSC Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXSC User Fees"
+#~ msgstr "TXSC User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXSC User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:18
@@ -1738,8 +1738,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Kjo veçori është në dispozicion vetëm nga GUI."
 
 #: src/components/wallet/standard/WalletStandard.tsx:264
-msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "Kjo është shuma e Chia që mund të përdorni aktualisht për të bërë transaksione. Nuk përfshin shpërblime në pritje të, transaksione në hyrje dhe Chia që sapo keni shpenzuar, por që nuk është ende në blockchain."
+msgid "This is the amount of Sector that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Sector that you have just spent but is not yet in the blockchain."
+msgstr "Kjo është shuma e Sector që mund të përdorni aktualisht për të bërë transaksione. Nuk përfshin shpërblime në pritje të, transaksione në hyrje dhe Sector që sapo keni shpenzuar, por që nuk është ende në blockchain."
 
 #: src/components/wallet/standard/WalletStandard.tsx:313
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -1758,8 +1758,8 @@ msgid "This is the time the block was created by the farmer, which is before it 
 msgstr "Kjo është koha kur blloku është krijuar nga fermeri, e cila është para se të finalizohet me një provë të kohës"
 
 #: src/components/wallet/standard/WalletStandard.tsx:252
-msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Kjo është sasia totale e chia në blockchain në nën bllok bllokun aktual që kontrollohet nga çelësat tuaj privatë. Ai përfshin shpërblime të ngrira, por jo në pritje të transaksioneve hyrëse dhe dalëse."
+msgid "This is the total amount of sector in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Kjo është sasia totale e sector në blockchain në nën bllok bllokun aktual që kontrollohet nga çelësat tuaj privatë. Ai përfshin shpërblime të ngrira, por jo në pritje të transaksioneve hyrëse dhe dalëse."
 
 #: src/components/wallet/standard/WalletStandard.tsx:291
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -1786,8 +1786,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Kjo tregti u përfshi në bllokimin në këtë lartësi të bllokut"
 
 #: src/components/app/AppTimeBombAlert.tsx:18
-msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "Ky version i Chia nuk është më i pajtueshëm me blockchain dhe nuk mund të fermojë në mënyrë të sigurt."
+msgid "This version of Sector is no longer compatible with the blockchain and can not safely farm."
+msgstr "Ky version i Sector nuk është më i pajtueshëm me blockchain dhe nuk mund të fermojë në mënyrë të sigurt."
 
 #: src/components/fullNode/FullNode.jsx:87
 msgid "Time Created"
@@ -1811,8 +1811,8 @@ msgstr "Për"
 msgid "Total Balance"
 msgstr "Totali i balances"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:15
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalSectorFarmed.tsx:15
+#~ msgid "Total Sector Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:192
@@ -1942,7 +1942,7 @@ msgstr "Prisni për sinkronizim"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.sectorWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -1975,8 +1975,8 @@ msgstr "Kuletat"
 #~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:107
-msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Dëshironi të fitoni më shumë Chia? Shtoni më shumë plote në fermën tuaj."
+msgid "Want to earn more Sector? Add more plots to your farm."
+msgstr "Dëshironi të fitoni më shumë Sector? Shtoni më shumë plote në fermën tuaj."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:82
 msgid "Want to have a delay before the next plot starts?"
@@ -1991,8 +1991,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Pesha është vështirësia totale e shtuar e të gjitha nën blloqeve deri dhe duke përfshirë këtë"
 
 #: src/components/selectKey/SelectKey.tsx:115
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Mirësevini në Chia. Ju lutemi identifikohuni me një çelës ekzistues, ose krijoni një çelës të ri."
+msgid "Welcome to Sector. Please log in with an existing key, or create a new key."
+msgstr "Mirësevini në Sector. Ju lutemi identifikohuni me një çelës ekzistues, ose krijoni një çelës të ri."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2041,8 +2041,8 @@ msgstr "Ju keni {0}% të hapësirës në rrjet, kështu që prodhimi i një bllo
 #~ msgstr "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3-4 times longer this estimate. <0>Learn about Expected Value</0>"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Sector application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Sector application as this version will stop working soon!"
 
 #: src/components/farm/overview/FarmOverview.tsx:33
 msgid "Your Farm Overview"
@@ -2105,9 +2105,9 @@ msgstr "po sinkronizohet"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Shpërblimet e bllokut"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-msgid "{currencyCode} Total Chia Farmed"
-msgstr "{currencyCode} Totali i Chia"
+#: src/components/farm/card/FarmCardTotalSectorFarmed.tsx:29
+msgid "{currencyCode} Total Sector Farmed"
+msgstr "{currencyCode} Totali i Sector"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"
