@@ -7,7 +7,7 @@ import {
   CardStep,
   Flex,
   TextField,
-} from '@secot/core';
+} from '@sector/core';
 import { Typography } from '@material-ui/core';
 import useSelectDirectory from '../../../hooks/useSelectDirectory';
 

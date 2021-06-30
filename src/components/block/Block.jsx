@@ -19,7 +19,7 @@ import {
   Loading,
   TooltipIcon,
   Flex,
-} from '@chia/core';
+} from '@sector/core';
 import {
   unix_to_short_date,
   hex_to_array,
