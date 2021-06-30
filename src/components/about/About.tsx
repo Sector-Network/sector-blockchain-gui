@@ -98,7 +98,10 @@ export default function About(props: Props) {
       <head>
         <base href="./" />
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes" />
+        <meta
+          name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes"
+        />
         <title>About {productName}</title>
       </head>
       <body>
@@ -108,7 +111,9 @@ export default function About(props: Props) {
             <img src={icon} />
           </StyledLogoContainer>
 
-          <StyledTitle>{productName} {version}</StyledTitle>
+          <StyledTitle>
+            {productName} {version}
+          </StyledTitle>
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />

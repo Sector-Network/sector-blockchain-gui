@@ -21,9 +21,7 @@ export default function FarmOverviewHero() {
   }
 
   function handleAddPlotDirectory() {
-    openDialog((
-      <PlotAddDirectoryDialog />
-    ));
+    openDialog(<PlotAddDirectoryDialog />);
   }
 
   return (
@@ -39,11 +37,7 @@ export default function FarmOverviewHero() {
               <Link target="_blank" href="https://github.com/Sector-Network/sector-blockchain/wiki/Network-Architecture">Learn more</Link>
             </Trans>
           </Typography>
-          <Button
-            onClick={handleAddPlot}
-            variant="contained"
-            color="primary"
-          >
+          <Button onClick={handleAddPlot} variant="contained" color="primary">
             <Trans>Add a Plot</Trans>
           </Button>
 
@@ -52,7 +46,9 @@ export default function FarmOverviewHero() {
           <Typography variant="body1">
             <Trans>
               {'Do you have existing plots on this machine? '}
-              <Link onClick={handleAddPlotDirectory} variant="body1">Add Plot Directory</Link>
+              <Link onClick={handleAddPlotDirectory} variant="body1">
+                Add Plot Directory
+              </Link>
             </Trans>
           </Typography>
         </CardHero>
