@@ -466,7 +466,7 @@ function SendCard(props: SendCardProps) {
       address = address.slice(2);
     }
 
-    const amountValue = Number.parseFloat(sector_to_octetamount));
+    const amountValue = Number.parseFloat(sector_to_octet(amount));
     const feeValue = Number.parseFloat(sector_to_octet(fee));
 
     dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
