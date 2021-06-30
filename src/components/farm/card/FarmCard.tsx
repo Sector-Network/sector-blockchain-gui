@@ -26,7 +26,7 @@ const StyledValue = styled(Typography)`
 
 type Props = {
   title: ReactNode;
-  value: ReactNode;
+  value?: ReactNode;
   valueColor?: TypographyProps['color'];
   description?: ReactNode;
   loading?: boolean;
@@ -50,10 +50,10 @@ export default function FarmCard(props: Props) {
             <CircularProgress color="secondary" size={25} />
           </Box>
         ) : (
-          <StyledValue variant="h5" color={valueColor}>
-            {value}
-          </StyledValue>
-        )}
+            <StyledValue variant="h5" color={valueColor}>
+              {value}
+            </StyledValue>
+          )}
 
         {description && (
           <Typography variant="caption" color="textSecondary">

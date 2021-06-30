@@ -1,70 +1,63 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, More } from '@sector/core';
-import { useSelector } from 'react-redux';
-import {
-  Box,
-  MenuItem,
-  CircularProgress,
-  ListItemIcon,
-  Typography,
-} from '@material-ui/core';
-import { Settings as SettingsIcon } from '@material-ui/icons';
-import type { RootState } from '../../../modules/rootReducer';
-import FarmOverviewHero from './FarmOverviewHero';
-import FarmOverviewCards from './FarmOverviewCards';
-import FarmManageFarmingRewards from '../FarmManageFarmingRewards';
+import { useHistory } from 'react-router-dom';
+import { Button, Divider, Grid, Typography } from '@material-ui/core';
+import styled from 'styled-components';
+import { CardHero, Link } from '@sector/core';
+import heroSrc from './images/hero.svg';
+import PlotAddDirectoryDialog from '../../plot/PlotAddDirectoryDialog';
 import useOpenDialog from '../../../hooks/useOpenDialog';
 
-export default function FarmOverview() {
-  const openDialog = useOpenDialog();
-  const plots = useSelector(
-    (state: RootState) => state.farming_state.harvester.plots,
-  );
-  const loading = !plots;
-  const hasPlots = !!plots && plots.length > 0;
+const StyledImage = styled('img')`
+  max-width: 7rem;
+`;
 
-  function handleManageFarmingRewards() {
-    // @ts-ignore
-    openDialog(<FarmManageFarmingRewards />);
+export default function FarmOverviewHero() {
+  const history = useHistory();
+  const openDialog = useOpenDialog();
+
+  function handleAddPlot() {
+    history.push('/dashboard/plot/add');
+  }
+
+  function handleAddPlotDirectory() {
+    openDialog(<PlotAddDirectoryDialog />);
   }
 
   return (
-    <>
-      <Flex gap={2} alignItems="center">
-        <Flex flexGrow={1}>
-          <Typography variant="h5" gutterBottom>
-            <Trans>Your Farm Overview</Trans>
-          </Typography>
-        </Flex>
-        <More>
-          {({ onClose }) => (
-            <Box>
-              <MenuItem
-                onClick={() => {
-                  onClose();
-                  handleManageFarmingRewards();
-                }}
+    <Grid container>
+      <Grid xs={12} md={6} lg={4} item>
+        <CardHero>
+          <StyledImage src={heroSrc} />
+          <Typography variant="body1">
+            <Trans>
+              Farmers earn block rewards and transaction fees by committing
+              spare space to the network to help secure transactions. This is
+              where your farm will be once you add a plot.{' '}
+              <Link
+                target="_blank"
+                href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
               >
-                <ListItemIcon>
-                  <SettingsIcon fontSize="small" />
-                </ListItemIcon>
-                <Typography variant="inherit" noWrap>
-                  <Trans>Manage Farming Rewards</Trans>
-                </Typography>
-              </MenuItem>
-            </Box>
-          )}
-        </More>
-      </Flex>
+                Learn more
+              </Link>
+            </Trans>
+          </Typography>
+          <Button onClick={handleAddPlot} variant="contained" color="primary">
+            <Trans>Add a Plot</Trans>
+          </Button>
 
-      {loading ? (
-        <CircularProgress />
-      ) : hasPlots ? (
-        <FarmOverviewCards />
-      ) : (
-        <FarmOverviewHero />
-      )}
-    </>
+          <Divider />
+
+          <Typography variant="body1">
+            <Trans>
+              {'Do you have existing plots on this machine? '}
+              <Link onClick={handleAddPlotDirectory} variant="body1">
+                Add Plot Directory
+              </Link>
+            </Trans>
+          </Typography>
+        </CardHero>
+      </Grid>
+    </Grid>
   );
 }

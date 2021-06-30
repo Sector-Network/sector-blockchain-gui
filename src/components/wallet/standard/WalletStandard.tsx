@@ -41,7 +41,7 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { octet_to_sector_string, sector_to_octet } from '../../../util/sector';
+import { /* octet_to_sector_string, */ sector_to_octet } from '../../../util/sector';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
