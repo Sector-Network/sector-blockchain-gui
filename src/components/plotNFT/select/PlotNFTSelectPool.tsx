@@ -41,7 +41,7 @@ async function prepareSubmitData(data: FormData): SubmitData {
     initialTargetState.relative_lock_height = relative_lock_height;
   }
 
-  const feeOctets = chia_to_octet(fee);
+  const feeOctets = sector_to_octet(fee);
 
   return {
     fee: feeOctets,

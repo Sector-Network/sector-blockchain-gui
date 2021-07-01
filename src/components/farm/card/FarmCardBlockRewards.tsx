@@ -26,7 +26,7 @@ export default function FarmCardBlockRewards() {
       const val =
         BigInt(farmerRewardAmount.toString()) +
         BigInt(poolRewardAmount.toString());
-      return mojo_to_chia(val);
+      return octet_to_sector(val);
     }
   }, [farmerRewardAmount, poolRewardAmount]);
 

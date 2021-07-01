@@ -5,7 +5,7 @@ import {
   Amount,
   Fee,
   Form,
-  TextField as ChiaTextField,
+  TextField as SectorTextField,
   AlertDialog,
   CopyToClipboard,
   Flex,
@@ -490,7 +490,7 @@ function SendCard(props: SendCardProps) {
       <Form methods={methods} onSubmit={handleSubmit}>
         <Grid spacing={2} container>
           <Grid xs={12} item>
-            <ChiaTextField
+            <SectorTextField
               name="address"
               variant="filled"
               color="secondary"
@@ -626,7 +626,7 @@ export default function StandardWallet(props: StandardWalletProps) {
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
           <Typography variant="h5" gutterBottom>
-            <Trans>Chia Wallet</Trans>
+            <Trans>Sector Wallet</Trans>
           </Typography>
         </Flex>
         <More>

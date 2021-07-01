@@ -173,13 +173,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = mojo_to_chia(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojo_to_chia(
+  const poolReward = octet_to_sector(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = octet_to_sector(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
-  const chiaFees = blockRecord.fees
-    ? mojo_to_chia(BigInt(blockRecord.fees))
+  const sectorFees = blockRecord.fees
+    ? octet_to_sector(BigInt(blockRecord.fees))
     : '';
 
   const rows = [

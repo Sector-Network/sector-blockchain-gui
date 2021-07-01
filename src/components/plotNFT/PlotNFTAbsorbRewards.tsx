@@ -135,7 +135,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
               <Trans>
                 You will recieve{' '}
                 <UnitFormat
-                  value={mojo_to_chia(BigInt(balance))}
+                  value={octet_to_sector(BigInt(balance))}
                   display="inline"
                   state={State.SUCCESS}
                 />{' '}

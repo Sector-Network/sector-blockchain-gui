@@ -43,13 +43,13 @@ export default function Amount(props: AmountProps) {
         }}
         {...rest}
       />
-      {!!mojo && (
+      {!!octet && (
         <FormHelperText>
           <Flex alignItems="center" gap={2}>
             <Flex flexGrow={1} gap={1}>
               <FormatLargeNumber value={octet} />
               <Box>
-                <Plural value={mojo} one="octet" other="octetss" />
+                <Plural value={octet} one="octet" other="octets" />
               </Box>
             </Flex>
             {children &&
