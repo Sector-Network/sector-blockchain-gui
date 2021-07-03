@@ -37,11 +37,7 @@ export default function AlertDialog(props: Props) {
       aria-describedby="alert-dialog-description"
       open={open}
     >
-      {title && (
-        <DialogTitle id="alert-dialog-title">
-          {title}
-        </DialogTitle>
-      )}
+      {title && <DialogTitle id="alert-dialog-title">{title}</DialogTitle>}
       {children && (
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
@@ -63,5 +59,5 @@ AlertDialog.defaultProps = {
   open: false,
   title: undefined,
   children: undefined,
-  onClose: () => {},
+  onClose: () => { },
 };

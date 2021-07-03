@@ -86,10 +86,7 @@ type Props = {
 export default function About(props: Props) {
   const {
     version,
-    packageJson: {
-      productName,
-      description,
-    },
+    packageJson: { productName, description },
     versions,
   } = props;
 
@@ -117,9 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">
-          Copyright (c) 2021 Sector Network
-        </div>
+        <div className="copyright">Copyright (c) 2021 Sector Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (
@@ -148,7 +143,10 @@ export default function About(props: Props) {
           )}
         </VersionsTable>
 
-        <BugReport href="https://github.com/Sector-Network/sector-blockchain/issues" target="_blank">
+        <BugReport
+          href="https://github.com/Sector-Network/secto-blockchain/issues"
+          target="_blank"
+        >
           Report an issue
         </BugReport>
         {'{{CSS}}'}
