@@ -321,7 +321,7 @@ export default function Block() {
     },
     {
       name: <Trans>Fees Amount</Trans>,
-      value: chiaFees ? `${chiaFees} ${currencyCode}` : '',
+      value: sectorFees ? `${sectorFees} ${currencyCode}` : '',
       tooltip: (
         <Trans>
           The total transactions fees in this block. Rewarded to the farmer.
@@ -336,7 +336,7 @@ export default function Block() {
         title={
           <BlockTitle>
             <Trans>
-              Block at height {blockRecord.height} in the Chia blockchain
+              Block at height {blockRecord.height} in the Sector blockchain
             </Trans>
           </BlockTitle>
         }
