@@ -135,7 +135,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         <>
           <Typography variant="subtitle1">
             <Trans>
-              Join a pool and get more consistent XCH farming rewards. Create a
+              Join a pool and get more consistent XSC farming rewards. Create a
               plot NFT and assign your new plots to a group.
             </Trans>
           </Typography>

@@ -397,18 +397,18 @@ if (!handleSquirrelEvent()) {
               );
             },
           },
-          {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
+          /*{
+            label: i18n._(// i18n  { id: 'Chat on KeyBase' }),
             click: () => {
               openExternal('https://keybase.io/team/sector_network.public');
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
+            label: i18n._(// i18n  { id: 'Follow on Twitter' }),
             click: () => {
               openExternal('https://twitter.com/sector_project');
             },
-          },
+          },*/
         ],
       },
     ];

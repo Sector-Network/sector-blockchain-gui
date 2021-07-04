@@ -65,7 +65,7 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Sector’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.sectorexplorer.com/"
+            href="https://www.sectorexplorer.info/"
             target="_blank"
           >
             Sector Explorer
